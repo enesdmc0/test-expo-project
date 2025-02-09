@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.enesdmc0.testexpoproject"
+      "package": "com.enesdmc0.testexpoproject",
+      "permissions": ["NOTIFICATIONS", "WAKE_LOCK", "SCHEDULE_EXACT_ALARM", "USE_EXACT_ALARM"]
     },
     "web": {
       "bundler": "metro",

@@ -350,6 +350,13 @@ export default function App() {
     };
   }, []);
 
+  async function clearAllNotifications() {
+    await Notifications.cancelAllScheduledNotificationsAsync();
+    console.log("📢 Tüm zamanlanmış bildirimler iptal edildi!");
+  }
+  
+  clearAllNotifications(); // Tüm bildirimleri iptal etmek için
+
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "space-around" }}>
       <View style={{ alignItems: "center", justifyContent: "center" }}>
